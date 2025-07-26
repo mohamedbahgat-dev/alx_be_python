@@ -18,4 +18,4 @@ if degree_type == 'F':
 elif degree_type == 'C':
     print(f"{temp}°C is {convert_to_fahrenheit(temp)}°F")
 else:
-    print('Invaide input!')
+    print("Invalid temperature. Please enter a numeric value.")
