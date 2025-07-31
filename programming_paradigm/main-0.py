@@ -13,10 +13,10 @@ def main():
 
     if command == "deposit" and amount is not None:
         account.deposit(amount)
-        print(f"Deposited: ${amount:.2f}")
+        print(f"Deposited: ${float(amount,2)}")
     elif command == "withdraw" and amount is not None:
         if account.withdraw(amount):
-            print(f"Withdrew: ${amount:.2f}")
+            print(f"Withdrew: ${float(amount,2)}")
         else:
             print("Insufficient funds.")
     elif command == "display":
