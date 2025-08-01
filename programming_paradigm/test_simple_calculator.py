@@ -7,12 +7,12 @@ class TestCalculator(unittest.TestCase):
         """Set up the SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(2,4), 6)
         self.assertEqual(self.calc.add(-2,4), 2)
         self.assertEqual(self.calc.add(-3,-4), -7)
 
-    def test_subtract(self):
+    def test_subtraction(self):
         self.assertEqual(self.calc.subtract(2,4), -2)
         self.assertEqual(self.calc.subtract(5,- 4), 9)
         self.assertEqual(self.calc.subtract(-2,-2), 0)
