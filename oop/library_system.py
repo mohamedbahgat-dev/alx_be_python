@@ -25,15 +25,15 @@ class PrintBook(Book):
 
 
 class Library:
-    books = []
+    def __init__(self):
+        self.books = []
     
-    @classmethod
-    def add_book(cls, book):
-        cls.books.append(book)
+    
+    def add_book(self,book):
+        self.books.append(book)
 
-    @staticmethod
-    def list_books():
-        for book in Library.books:
+    def list_books(self):
+        for book in self.books:
             print(book)
 
 
